@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LAST WAY STALKER RP — официальная база знаний проекта. Лор, правила, фракции, исследования и документы.">
+  <title>LAST WAY STALKER RP — База знаний</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-home aria-label="На главную">
+        <span class="brand-mark">LW</span>
+        <span><strong>LAST WAY</strong><small>STALKER ROLEPLAY</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="#catalog">База знаний</a>
+        <a href="#about">О проекте</a>
+      </nav>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Открыть меню">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-noise"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="pulse"></span> ЭЛЕКТРОННАЯ ЭНЦИКЛОПЕДИЯ ПРОЕКТА</div>
+          <h1>LAST WAY<br><em>STALKER RP</em></h1>
+          <p class="hero-copy">Память Зоны хранит больше, чем кажется.<br>Изучай материалы. Соблюдай правила. Выбирай свой путь.</p>
+          <a class="primary-button" href="#catalog">ОТКРЫТЬ АРХИВ <span>↗</span></a>
+        </div>
+        <div class="hero-stamp"><span>LW</span><small>FIELD<br>ARCHIVE</small></div>
+        <div class="hero-bottom"><span>АРХИВ / ДОСТУП ОТКРЫТ</span><span>БАЗА ЗНАНИЙ • ВЕРСИЯ 0.1</span></div>
+      </section>
+
+      <section class="search-section" id="catalog">
+        <div class="section-heading">
+          <div><span class="eyebrow">НАВИГАЦИЯ ПО МАТЕРИАЛАМ</span><h2>Архив Зоны</h2></div>
+          <span class="section-count">01 / KNOWLEDGE BASE</span>
+        </div>
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Найти статью, правило или документ..." autocomplete="off">
+          <kbd>ПОИСК</kbd>
+        </label>
+        <div class="filter-row" id="filters">
+          <button class="filter active" data-filter="all">Все материалы</button>
+          <button class="filter" data-filter="lore">Лор</button>
+          <button class="filter" data-filter="rules">Правила</button>
+          <button class="filter" data-filter="factions">Фракции</button>
+          <button class="filter" data-filter="science">Разработки</button>
+          <button class="filter" data-filter="world">Мир Зоны</button>
+          <button class="filter" data-filter="docs">Документы</button>
+        </div>
+        <div class="card-grid" id="articleGrid">
+          <a class="article-card feature-card" href="#article/lore" data-category="lore" data-search="история лор история зоны события хронология">
+            <div class="card-art art-lore"><span class="art-label">01 / HISTORY</span><span class="art-symbol">◉</span></div>
+            <div class="card-body"><div class="card-meta"><span>ИСТОРИЯ И ЛОР</span><span>01</span></div><h3>История Зоны</h3><p>Хронология событий, предыстория и ключевые этапы развития мира.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/rules" data-category="rules" data-search="правила проекта roleplay нарушения регламент">
+            <div class="card-art art-rules"><span class="art-label">02 / REGULATIONS</span><span class="art-symbol">§</span></div>
+            <div class="card-body"><div class="card-meta"><span>ПРАВИЛА</span><span>02</span></div><h3>Правила проекта</h3><p>Общие положения, RP-правила и порядок взаимодействия игроков.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/factions" data-category="factions" data-search="фракции группировки организации уставы">
+            <div class="card-art art-factions"><span class="art-label">03 / GROUPS</span><span class="art-symbol">⌖</span></div>
+            <div class="card-body"><div class="card-meta"><span>ОРГАНИЗАЦИИ</span><span>03</span></div><h3>Фракции</h3><p>Группировки, их цели, структура, история и внутренние уставы.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/science" data-category="science" data-search="наука разработки чертежи исследования медицина костюмы техника">
+            <div class="card-art art-science"><span class="art-label">04 / RESEARCH</span><span class="art-symbol">⌬</span></div>
+            <div class="card-body"><div class="card-meta"><span>НАУЧНЫЙ СЕКТОР</span><span>04</span></div><h3>Разработки и чертежи</h3><p>Исследования, технологические ветки, рецепты и требования.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/world" data-category="world" data-search="мир зоны локации аномалии мутанты артефакты">
+            <div class="card-art art-world"><span class="art-label">05 / THE ZONE</span><span class="art-symbol">☢</span></div>
+            <div class="card-body"><div class="card-meta"><span>ЭНЦИКЛОПЕДИЯ ЗОНЫ</span><span>05</span></div><h3>Мир Зоны</h3><p>Локации, аномалии, мутанты, артефакты и опасные явления.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/docs" data-category="docs" data-search="документы приказы протоколы архив записки">
+            <div class="card-art art-docs"><span class="art-label">06 / DOCUMENTS</span><span class="art-symbol">▤</span></div>
+            <div class="card-body"><div class="card-meta"><span>ДОКУМЕНТАЦИЯ</span><span>06</span></div><h3>Архив документов</h3><p>Приказы, протоколы, отчёты, найденные записи и служебные материалы.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/equipment" data-category="world" data-search="экипировка оружие броня медицина предметы снаряжение">
+            <div class="card-art art-gear"><span class="art-label">07 / EQUIPMENT</span><span class="art-symbol">⛭</span></div>
+            <div class="card-body"><div class="card-meta"><span>СНАРЯЖЕНИЕ</span><span>07</span></div><h3>Предметы и экипировка</h3><p>Снаряжение, оружие, броня, медицина и полезные предметы.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+          <a class="article-card" href="#article/faq" data-category="docs" data-search="вопросы ответы помощь новичок faq">
+            <div class="card-art art-faq"><span class="art-label">08 / FIELD GUIDE</span><span class="art-symbol">?</span></div>
+            <div class="card-body"><div class="card-meta"><span>СПРАВОЧНИК</span><span>08</span></div><h3>Памятка новичка</h3><p>С чего начать, куда обращаться и что важно знать перед выходом в Зону.</p><span class="card-link">ОТКРЫТЬ МАТЕРИАЛ ↗</span></div>
+          </a>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>По вашему запросу ничего не найдено.</p>
+      </section>
+
+      <section class="about-strip" id="about">
+        <div><span class="eyebrow">ОБ ЭТОМ АРХИВЕ</span><h2>Знание — тоже<br><em>способ выжить.</em></h2></div>
+        <p>LAST WAY STALKER RP — единая точка доступа к информации проекта. Здесь собраны материалы, которые помогают ориентироваться в мире, понимать правила и находить ответы.</p>
+      </section>
+    </main>
+
+    <footer><a class="brand footer-brand" href="#" data-home><span class="brand-mark">LW</span><span><strong>LAST WAY</strong><small>STALKER ROLEPLAY</small></span></a><span>АРХИВ ОТКРЫТ • 2026</span><span>FIND YOUR LAST WAY</span></footer>
+  </div>
+  <div class="article-view" id="articleView" hidden>
+    <div class="article-toolbar"><a href="#" data-home>← НАЗАД В АРХИВ</a><span>LAST WAY / KNOWLEDGE BASE</span></div>
+    <article class="article-content" id="articleContent"></article>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
